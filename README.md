@@ -18,3 +18,5 @@ We implemented our code with MVC Pattern
 If you want to use or to have more informations contact us:
 François Chastel : francois.chastel@icloud.com
 Timothy Keynes : tim@keynes.fr
+
+PS: We are actually working on a full-documented Java-Doc
