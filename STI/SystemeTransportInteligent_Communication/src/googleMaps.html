@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+  ~ Copyright © 2015, François Chastel and Timothy Keynes
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+  ~
+  ~ The Software is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders X be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the Software.
+  ~
+  ~ Except as contained in this notice, the name of the <copyright holders> shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization from the François Chastel and Timothy Keynes.
+  -->
+
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple markers</title>
+    <style>
+        html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>// Standard google maps function
+    var markers = [];
+    var markersPanne = [];
+
+    var markersCar = [];
+    var iconeCar = 'images/icone_car.png';
+    var iconeAccident = 'images/icone_crash.png';
+    var iconeBouchon = 'images/icone_trafic.png';
+    var iconePanne = 'images/icone_fail.png';
+    var iconeMessage = 'images/icone_mail.png';
+
+    function initialize() {
+        var myLatlng = new google.maps.LatLng(48.86341,2.36);
+        var myOptions = {
+            zoom: 17,
+            center: myLatlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+    }
+
+    // Function for adding a marker to the page.
+    function addMarkerCar(location,unTitre) {
+        markerCar = new google.maps.Marker({
+            position: location,
+            map: map,
+            icon: iconeCar,
+            title: 'Test voiture'
+        });
+        markersCar.push(markerCar);
+    }
+
+    function addMarkerAccident(location,unTitre) {
+        markerAccident = new google.maps.Marker({
+            position: location,
+            map: map,
+            icon: iconeAccident,
+            title: "Test accident"
+        });
+        markers.push(markerAccident);
+    }
+
+    function addMarkerBouchon(location,unTitre) {
+        markerBouchon = new google.maps.Marker({
+            position: location,
+            map: map,
+            icon: iconeBouchon,
+            title: "Test bouchon"
+        });
+        markers.push(markerBouchon);
+    }
+
+    function addMarkerPanne(location,unTitre) {
+        markerPanne = new google.maps.Marker({
+            position: location,
+            map: map,
+            icon: iconePanne,
+            title: "Test panne"
+        });
+        markersPanne.push(markerPanne);
+    }
+
+    function addMarkerMessage(location,unTitre) {
+        markerMessage = new google.maps.Marker({
+            position: location,
+            map: map,
+            icon: iconeMessage,
+            title: "Test panne"
+        });
+        markers.push(markerMessage);
+    }
+
+    // Sets the map on all markers in the array.
+    function setAllMap(map) {
+        for (var i = 0; i < markers.length; i++) {
+            markers[i].setMap(map);
+        }
+
+    }
+
+    // Removes the markers from the map, but keeps them in the array.
+    function clearMarkers() {
+        setAllMap(null);
+    }
+
+    // Deletes all markers in the array by removing references to them.
+    function deleteMarkers() {
+        clearMarkers();
+        markers = [];
+    }
+
+    // Testing the addMarker function
+    function constructeurMarker(uneLat,uneLong,unTitre,unType) {
+        CentralPark = new google.maps.LatLng(uneLat, uneLong);
+        if (unType == 'voiture')
+        {
+            addMarkerCar(CentralPark,unTitre);
+        }
+        else if (unType == 'accident')
+        {
+            addMarkerAccident(CentralPark,unTitre);
+        }
+
+        else if (unType == 'bouchon')
+        {
+            addMarkerBouchon(CentralPark,unTitre);
+        }
+
+        else if (unType == 'panne')
+        {
+            addMarkerPanne(CentralPark,unTitre);
+        }
+
+        else
+        {
+            addMarkerMessage(CentralPark,unTitre);
+        }
+    }
+
+
+
+
+
+    </script>
+</head>
+<body onload="initialize()">
+<div id="map-canvas"></div>
+</body>
+</html>

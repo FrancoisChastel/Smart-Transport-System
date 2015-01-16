@@ -1,0 +1,43 @@
+English
+To launch the program follow this steps
+
+1. Create a local BDD
+2. Name it ‘sti’
+3. Create a user named: ‘root’ and password: ‘’ (empty).
+4. Import badeDeDonne.sql in your BDD
+5. Create a project in your IDE
+6. Import the code locate the following path:SystemeTransportInteligent_Communication/*
+7. Add in your classPath this two files com.mysql.jdbc_5.1.5.jar and ojdbc7.jar locate in librairies_externes
+8. Launch the main
+
+Contact us for more explanation
+Francois Chatel
+Timothy Keynes
+
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+Francais:
+Afin de lancer la démo veuillez suivre la démarche suivante:
+
+1. Créer une bdd en local avec MySql serveur par exemple
+2. Nommer la BDD: ‘sti’
+3. Créer un utilisateur avec login: ‘root’ et mdp: ‘’ (vide).
+4. Importer le script baseDeDonnee.sql dans la base de donnée
+5. Créer un projet sous votre IDE
+6. Importer le développement situé: Dev/SystemeTransportInteligent_Communication/*
+7. Ajouter dans votre classPath les deux fichiers com.mysql.jdbc_5.1.5.jar et ojdbc7.jar présents dans Dev/librairies_externes
+8. Lancez la classe Main
+
+Respectez bien toutes les étapes.
+
+
+
+
+Copyright © 2015, François Chastel and Timothy Keynes
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+The Software is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders X be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the Software.
+
+Except as contained in this notice, the name of the <copyright holders> shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization from the François Chastel and Timothy Keynes. 

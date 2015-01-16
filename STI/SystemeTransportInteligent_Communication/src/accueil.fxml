@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?scenebuilder-stylesheet style.css?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+<!--
+  ~ Copyright © 2015, François Chastel and Timothy Keynes
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+  ~
+  ~ The Software is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders X be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the Software.
+  ~
+  ~ Except as contained in this notice, the name of the <copyright holders> shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization from the François Chastel and Timothy Keynes.
+  -->
+
+<StackPane fx:id="vista1" maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0"
+           prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="AccueilController">
+    <children>
+        <WebView fx:id="webView" maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0"
+                 prefHeight="720.0" prefWidth="1280.0" StackPane.alignment="CENTER_RIGHT"/>
+        <Rectangle arcHeight="5.0" fill="#1c1c1c" height="720.0" stroke="BLACK" strokeType="INSIDE" width="120.0"
+                   x="-1000.0" StackPane.alignment="CENTER_LEFT"/>
+        <Button id="bouton_Messages" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="24.0" layoutY="30.0"
+                mnemonicParsing="false" onAction="#displayMessages" prefHeight="70.0" prefWidth="70.0" text=" "
+                textOverrun="CLIP" StackPane.alignment="TOP_LEFT">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+            <StackPane.margin>
+                <Insets left="25.0" top="25.0"/>
+            </StackPane.margin>
+        </Button>
+        <Button id="bouton_Signaler" layoutX="24.0" layoutY="620.0" mnemonicParsing="false"
+                onAction="#displaySignalement" prefHeight="70.0" prefWidth="70.0" text=" " textOverrun="CLIP"
+                StackPane.alignment="BOTTOM_LEFT">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+            <StackPane.margin>
+                <Insets bottom="25.0" left="25.0"/>
+            </StackPane.margin>
+        </Button>
+        <Button id="bouton_Parametre" alignment="CENTER" layoutX="1178.0" layoutY="25.0" mnemonicParsing="false"
+                onAction="#displayParametres" prefHeight="70.0" prefWidth="70.0" text=" "
+                StackPane.alignment="TOP_RIGHT">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+            <StackPane.margin>
+                <Insets right="35.0" top="20.0"/>
+            </StackPane.margin>
+        </Button>
+        <Button id="bouton_SOS" layoutX="1170.0" layoutY="610.0" mnemonicParsing="false" onAction="#nextPane"
+                prefHeight="100.0" prefWidth="100.0" text=" " StackPane.alignment="BOTTOM_RIGHT">
+            <StackPane.margin>
+                <Insets bottom="20.0" right="20.0"/>
+            </StackPane.margin>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Text fill="WHITE" layoutX="11.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="19 : 45"
+              StackPane.alignment="CENTER_LEFT">
+            <font>
+                <Font name="Roboto Regular" size="33.0"/>
+            </font>
+            <StackPane.margin>
+                <Insets left="10.0"/>
+            </StackPane.margin>
+        </Text>
+    </children>
+</StackPane>

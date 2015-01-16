@@ -1,0 +1,122 @@
+/** This is a CSS document of stylesheets for Education project
+  *	Systeme de Transport Intelligent
+  *	By Francois Chastel , Alexandre Jalat-Million, Timothy Keynes et Kevin Schieb
+  *	Student of University, Nice, France - Students in computer science
+**/
+
+#bouton_Messages
+{
+    -fx-background-image: url("images/messages.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: stretch;
+    -fx-background-size: 70 70;
+    -fx-background-color: none;
+}
+
+#bouton_Signaler
+{
+    -fx-background-image: url("images/signaler.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: stretch;
+    -fx-background-size: 70 70;
+    -fx-background-color: none;
+}
+
+#bouton_Parametre
+{
+    -fx-background-image: url("images/parametres.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: stretch;
+    -fx-background-size: 70 70;
+    -fx-background-color: none;
+}
+
+#bouton_SOS
+{
+    -fx-background-image: url("images/sos.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100 100;
+    -fx-background-color: none;
+}
+
+
+#bouton_Retour
+{
+    -fx-background-color: none;
+    -fx-background-image: url("images/retour.png");
+    -fx-background-position: center center;
+    -fx-background-size: 75 75;
+    -fx-background-repeat: stretch;
+}
+
+#bouton_Signalement_Envoyer
+{
+    -fx-background-image: url("images/icone_send.png");
+    -fx-background-position: center center;
+    -fx-background-size: 100 40;
+    -fx-background-repeat: stretch;
+    -fx-background-color: none;
+}
+
+
+#liste_Messages
+{
+    -fx-text-fill: black; /* 5 */
+}
+
+#liste_Messages:odd
+{
+    -fx-background-color: white;
+}
+
+#liste_Messages:even
+{
+    -fx-background-color: #8f8;
+}
+
+#liste_Messages:filled:hover
+{
+    -fx-background-color: #00f;
+    -fx-text-fill: white;
+}
+
+
+#bouton_Bouchon
+{
+    -fx-background-color: none;
+}
+
+#bouton_Obstacle
+{
+    -fx-background-color: none;
+}
+
+#bouton_Accident
+{
+    -fx-background-color: none;
+}
+
+
+
+.list-cell:filled {
+    -fx-text-alignment: center;
+}
+
+.list-cell:even {
+    -fx-background-color: #2c4f95;
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+}
+
+.list-cell:odd {
+    -fx-background-color: #4f76c4;
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-text-alignment: center;
+}

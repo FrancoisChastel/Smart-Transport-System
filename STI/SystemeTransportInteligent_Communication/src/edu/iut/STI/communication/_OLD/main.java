@@ -1,0 +1,36 @@
+/*
+ * Copyright © 2015, François Chastel and Timothy Keynes
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ *
+ * The Software is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders X be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the Software.
+ *
+ * Except as contained in this notice, the name of the <copyright holders> shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization from the François Chastel and Timothy Keynes.
+ */
+
+/****************************************************
+ *  SystemeTransportInteligent_Communication          by  Aloysius             *
+ *  02/10/2014        16:27                           *
+ ****************************************************/
+
+package edu.iut.STI.communication._OLD;
+
+/**
+ * Created by Aloysius on 02/10/2014.
+ */
+
+public class main {
+    public static void main(String[] args) {
+        /*Systeme systeme=new Systeme();
+        Automobilisme tim=new Automobilisme("Tim","Keynes","06",1);
+        ModeleVehicule porsche=new ModeleVehicule("","",1);
+
+        Vehicule vehicule=systeme.addVehicule(tim,porsche);
+        vehicule.addMessage(new Message(3, new Position(, "", "", false), vehicule, "Test", null, 12));
+        vehicule.addMessage(new Message(3, new Position("", "", "", false), vehicule, "Test", null, 12));
+        vehicule.readMessages();*/
+    }
+}
+    
